@@ -16,5 +16,4 @@ gen
 .idea/uiDesigner.xml
 DataStructure.iml
 pom.xml
-src/
-target/
+src/test
