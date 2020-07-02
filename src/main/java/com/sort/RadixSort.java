@@ -29,7 +29,7 @@ public class RadixSort {
         // bucketElementCounts[0] 记录的是bucket[0] 这一个桶的放入的数据的个数
         int[] bucketElementCounts = new int[10];
 
-        for (int i = 0, n=1;i < maxLength; i++,n*=10) {
+        for (int i = 0, n = 1; i < maxLength; i++, n *= 10) {
             //针对每个元素的位数进行排序处理 , 第一次是个位, 第二次是十位,第三次是百位
             for (int j = 0; j < arr.length; j++) {
                 //取出每个元素的个数
@@ -51,7 +51,7 @@ public class RadixSort {
                     }
                 }
                 //处理完一轮后,把桶的计数单位 bucketElementCounts[k]清零
-                bucketElementCounts[k]=0;
+                bucketElementCounts[k] = 0;
             }
         }
     }
